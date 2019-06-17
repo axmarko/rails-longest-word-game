@@ -1,0 +1,20 @@
+<div class="container">
+
+  <body>
+    <h1>Result</h1>
+
+    <%= @answer  %>
+
+    <%= "Your score is #{session[:score]}." %>
+
+    <br>
+    <br>
+
+    <%= link_to 'Play again', new_path  %>
+
+    <br>
+    <br>
+
+    <%= link_to 'Reset session', res_session_path, method: :post  %>
+  </body>
+</div>
